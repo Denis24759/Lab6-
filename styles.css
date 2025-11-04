@@ -1,0 +1,90 @@
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background: #fbff00;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #1eff00;
+  color: #0004ff;
+  padding: 10px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.container {
+  padding: 20px;
+}
+
+.breadcrumbs {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.breadcrumbs span {
+  color: #0004ff;
+  cursor: pointer;
+}
+
+.breadcrumbs span:not(:last-child)::after {
+  content: " / ";
+  color: #ffcc00;
+}
+
+input[type="text"] {
+  padding: 6px;
+  width: 300px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ff4400;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+.user-section-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.users-separator {
+  border: none;
+  border-top: 1px dashed #ff4400;
+  margin: 25px 0;
+}
+
+.todo-add-input {
+  margin-top: 10px;
+}
+
+.todo-list {
+  margin-top: 15px;
+}
+
+/* Немного отзывчивости */
+@media (max-width: 420px) {
+  input[type="text"] { width: 100%; }
+  button { margin-top: 6px; display: inline-block; }
+}
